@@ -14,4 +14,19 @@ const weixin = u.indexOf("MicroMessenger") > -1; //是否微信
 const qq = u.match(/\sQQ/i); //是否QQ
 const language = navigator.language.toLowerCase();
 
-export { app, trident, presto, webKit, gecko, mobile, ios, android, iPhone, iPad, webApp, weixin, qq, language };
+export {
+  app,
+  trident,
+  presto,
+  webKit,
+  gecko,
+  mobile,
+  ios,
+  android,
+  iPhone,
+  iPad,
+  webApp,
+  weixin,
+  qq,
+  language,
+};

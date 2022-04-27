@@ -6,21 +6,31 @@
       <Cell title="单元格" value="内容" />
       <Cell title="单元格" value="内容" label="描述信息" />
     </CellGroup>
+    <Tabs v-model="active">
+      <tab title="标签 1">
+        <img src="../assets/img/biBg.png" alt="" width="100%" />
+      </tab>
+      <tab title="标签 2">内容 2</tab>
+    </Tabs>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import { Button, CellGroup, Cell } from "vant";
+import { Button, CellGroup, Cell, Tab, Tabs } from "vant";
 
 @Component({
   components: {
     Button,
     CellGroup,
     Cell,
+    Tab,
+    Tabs,
   },
 })
-export default class HomeView extends Vue {}
+export default class HomeView extends Vue {
+  active = 0;
+}
 </script>
 
 <style lang="scss" scoped>
