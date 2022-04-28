@@ -5,7 +5,6 @@ import axios, {
   AxiosError,
 } from "axios";
 import { HttpErrorEnum } from "./httpErrorEnum";
-import { Notify } from "vant";
 import { MStorage } from "@/util";
 
 const instance = axios.create({});

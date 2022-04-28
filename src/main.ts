@@ -6,6 +6,9 @@ import "normalize.css";
 import "amfe-flexible";
 import "./style/index.scss";
 
+// 注册三方库
+import "@/plugins/vant";
+
 import App from "./App.vue";
 import "./registerServiceWorker";
 import router from "./router";

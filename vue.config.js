@@ -43,4 +43,16 @@ module.exports = defineConfig({
       patterns: [path.resolve(__dirname, `./src/style/theme/index.scss`)],
     },
   },
+  devServer: {
+    proxy: {
+      "/api": {
+        target: "https://lyq-music.vercel.app",
+        ws: true,
+        changeOrigin: true,
+        pathRewrite: {
+          "^/api": "",
+        },
+      },
+    },
+  },
 });
